@@ -1,3 +1,5 @@
+//API routes for campuses data
+
 const express = require('express');
 const router = express.Router();
 const { Student, Campus } = require('../database/models');

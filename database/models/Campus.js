@@ -9,7 +9,17 @@ const Campus = db.define("campus", {
   },
 
   description: {
+    type: Sequelize.STRING
+  },
+
+  address: {
     type: Sequelize.STRING,
+    allowNull: false
+  },
+
+  imageUrl : {
+    type: Sequelize.STRING,
+    defaultValue: "students/image.png"
   }
 
 });
